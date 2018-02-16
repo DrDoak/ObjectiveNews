@@ -9,15 +9,21 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
       body {
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #f5f5f5;
       }
+      .sign-in-rightshift{
+        margin-left: 180px;
+      }
 
       .form-signin {
-        max-width: 300px;
+        max-width: 400px;
+        max-height: 500px;
         padding: 19px 29px 29px;
         margin: 0 auto 20px;
         background-color: #fff;
@@ -31,7 +37,7 @@
       }
       .form-signin .form-signin-heading,
       .form-signin .checkbox {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
       .form-signin input[type="text"],
       .form-signin input[type="password"] {
@@ -62,13 +68,26 @@
     <div class="container">
 
       <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <h2 class="form-signin-heading">Sign in</h2>
         <input type="text" class="input-block-level" placeholder="Email address">
         <input type="password" class="input-block-level" placeholder="Password">
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
-        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" 
+            data-toggle="dropdown">
+            More Option <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Forget Account</a></li>
+          </ul>
+        </div>
+      
+
+        <button class="btn btn-large btn-primary sign-in-rightshift" type="submit">Sign in</button>
+      
       </form>
 
     </div> <!-- /container -->
@@ -76,7 +95,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
+
 
   </body>
 </html>
